@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+# Dependency directories
+node_modules/
+jspm_packages/
+# Build directories
+dist/
+dist-ssr/
+build/
+# Firebase cache / logs
+.firebase/
+# Environment files (keeps secrets out of GitHub!)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+# IDEs and editors
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+# pnpm
+pnpm-lock.yaml
+# Diagnostic reports (Crashed node processes)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
