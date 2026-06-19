@@ -1,6 +1,7 @@
 <div align="center">
-  # 🇵🇸 🇵🇸 🇵🇸 I STAND WITH PALESTINE 🇵🇸 🇵🇸 🇵🇸
-  # 🍉 FREE PALESTINE 🍉
+
+  # 🇵🇸 I STAND WITH PALESTINE 🇵🇸
+  ### **Ceasefire Now. Free Palestine. 🍉**
 
   ---
 
