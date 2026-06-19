@@ -1,11 +1,12 @@
-# 🇵🇸 🇵🇸 🇵🇸 I STAND WITH PALESTINE 🇵🇸 🇵🇸 🇵🇸
-# 🍉 FREE PALESTINE 🍉
-
----
-
-# 🚀 FinMan: Track Your Money, No Cap 💸✨
-
 <div align="center">
+  # 🇵🇸 🇵🇸 🇵🇸 I STAND WITH PALESTINE 🇵🇸 🇵🇸 🇵🇸
+  # 🍉 FREE PALESTINE 🍉
+
+  ---
+
+  # 🚀 FinMan: Track Your Money, No Cap 💸✨
+
+
   <img src="https://img.shields.io/badge/Gen--Z-Approved-ff69b4?style=for-the-badge&logo=rocket" alt="Gen-Z Approved" />
   <img src="https://img.shields.io/badge/Aesthetics-100%25-blueviolet?style=for-the-badge" alt="100% Aesthetics" />
   <img src="https://img.shields.io/badge/Main%20Character-Energy-brightgreen?style=for-the-badge" alt="Main Character Energy" />
