@@ -185,7 +185,7 @@ Use this data to give highly personalized, accurate, and encouraging advice.`;
   };
 
   return (
-    <div className="bg-background relative h-full flex flex-col max-w-2xl mx-auto pb-[78px]">
+    <div className="bg-background relative h-full flex flex-col overflow-hidden w-full pb-[78px]">
       {/* Header */}
       <div className="bg-gradient-to-b from-card to-transparent px-6 sm:px-8 pt-16 pb-5 shrink-0">
         <div className="flex items-center justify-between mb-4">

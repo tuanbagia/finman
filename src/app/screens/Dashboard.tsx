@@ -76,7 +76,7 @@ export default function Dashboard() {
   const isPositiveSaving = savedPercentage > 0;
 
   return (
-    <div className="bg-background relative h-full flex flex-col">
+    <div className="h-full flex flex-col overflow-hidden">
       {/* Level Up Modal */}
       <AnimatePresence>
         {showLevelUp && (

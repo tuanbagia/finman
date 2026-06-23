@@ -74,15 +74,20 @@ export default function Achievements() {
   const unlockedCount = achievements.filter(a => a.unlocked).length;
 
   return (
-    <div className="bg-background relative min-h-full overflow-hidden pb-[78px]">
+    <div className="h-full flex flex-col overflow-hidden">
       <div className="absolute top-0 left-0 right-0 bg-gradient-to-b from-card to-transparent h-[200px] z-0" />
-      <div className="relative z-10">
-        <div className="flex items-center justify-between px-6 sm:px-8 pt-16 mb-6">
-          <button onClick={() => navigate(-1)} className="p-1 hover:bg-muted rounded-full transition-all"><ArrowLeft className="size-[26px] text-foreground" /></button>
-          <h1 className="font-['DM_Sans',sans-serif] font-bold text-[24px] text-foreground">Achievements</h1>
-          <div className="w-[26px]" />
-        </div>
+      
+      {/* Header */}
+      <div className="relative z-10 flex items-center justify-between px-6 sm:px-8 pt-16 mb-6 shrink-0">
+        <button onClick={() => navigate(-1)} className="p-1 hover:bg-muted rounded-full transition-all">
+          <ArrowLeft className="size-[26px] text-foreground" />
+        </button>
+        <h1 className="font-['DM_Sans',sans-serif] font-bold text-[24px] text-foreground">Achievements</h1>
+        <div className="w-[26px]" />
+      </div>
 
+      {/* Scrollable Content */}
+      <div className="flex-1 overflow-y-auto pb-24 scrollbar-hide relative z-10">
         <motion.div className="mx-6 sm:mx-8 mb-8 bg-gradient-to-br from-accent-green to-[#6bc98a] rounded-2xl p-5 shadow-lg" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="flex items-center justify-between mb-3">
             <div>
@@ -96,7 +101,7 @@ export default function Achievements() {
           </div>
         </motion.div>
 
-        <div className="px-6 sm:px-8 pb-24 space-y-4 max-h-[calc(100vh-350px)] overflow-y-auto scrollbar-hide">
+        <div className="px-6 sm:px-8 space-y-4">
           {achievements.map((achievement, index) => (
             <motion.div key={achievement.id} className={`bg-card rounded-xl p-4 border border-border ${achievement.unlocked ? 'shadow-md' : 'opacity-60'}`}
               initial={{ opacity: 0, x: -20 }} animate={{ opacity: achievement.unlocked ? 1 : 0.6, x: 0 }} transition={{ delay: index * 0.1 }}

@@ -53,17 +53,22 @@ export default function Profile() {
   });
 
   return (
-    <div className="bg-background relative min-h-full overflow-hidden pb-[78px]">
+    <div className="bg-background relative h-full flex flex-col overflow-hidden">
       <div className="absolute top-0 left-0 right-0 h-[300px] bg-gradient-to-br from-accent-green to-[#6bc98a] z-0 opacity-80" />
-      <div className="relative z-10">
-        <div className="flex items-center justify-between px-6 sm:px-8 pt-16 mb-8">
-          <button onClick={() => navigate(-1)} className="p-1 hover:scale-110 transition-all"><ArrowLeft className="size-[26px] text-white" /></button>
-          <h1 className="font-['DM_Sans',sans-serif] font-bold text-[24px] text-white drop-shadow-md">Profile</h1>
-          <button onClick={() => setIsSettingsOpen(true)} className="p-1 hover:scale-110 transition-all">
-            <Settings className="size-[26px] text-white drop-shadow-md" />
-          </button>
-        </div>
+      
+      {/* Header */}
+      <div className="relative z-10 flex items-center justify-between px-6 sm:px-8 pt-16 mb-8 shrink-0">
+        <button onClick={() => navigate(-1)} className="p-1 hover:scale-110 transition-all">
+          <ArrowLeft className="size-[26px] text-white" />
+        </button>
+        <h1 className="font-['DM_Sans',sans-serif] font-bold text-[24px] text-white drop-shadow-md">Profile</h1>
+        <button onClick={() => setIsSettingsOpen(true)} className="p-1 hover:scale-110 transition-all">
+          <Settings className="size-[26px] text-white drop-shadow-md" />
+        </button>
+      </div>
 
+      {/* Scrollable container */}
+      <div className="flex-1 overflow-y-auto pb-24 scrollbar-hide relative z-10">
         <motion.div className="mx-6 sm:mx-8 mb-6" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <div className="flex flex-col items-center mb-5">
             <div className="relative mb-3">

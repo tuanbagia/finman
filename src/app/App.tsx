@@ -75,8 +75,8 @@ export default function App() {
         <AuthProvider>
           <FirestoreProvider>
             {/* Desktop Wrapper to simulate mobile view */}
-            <div className="min-h-dvh bg-black/20 flex justify-center w-full">
-              <div className="w-full max-w-md bg-background text-foreground relative overflow-y-auto shadow-2xl h-dvh">
+            <div className="min-h-dvh bg-black/20 flex justify-center w-full overflow-hidden flex flex-col h-dvh">
+              <div className="w-full max-w-md bg-background text-foreground relative shadow-2xl h-dvh overflow-hidden flex flex-col">
                 <AppRoutes />
               </div>
             </div>

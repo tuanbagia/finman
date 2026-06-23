@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Moon, Sun, X, LogOut, Globe } from 'lucide-react';
+import { Moon, Sun, X, LogOut, Globe, Github, Palette } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { useFirestore } from '@/contexts/FirestoreContext';
 import { useCurrency, CURRENCIES, type CurrencyType } from '@/hooks/useCurrency';
@@ -98,6 +98,48 @@ export default function SettingsModal({ isOpen, onClose, onLogout }: SettingsMod
                       ))}
                     </select>
                   </div>
+                </div>
+              </div>
+
+              {/* About Credits */}
+              <div>
+                <h3 className="font-['DM_Sans',sans-serif] font-semibold text-[14px] text-muted-foreground mb-4 uppercase tracking-wider">About</h3>
+                <div className="bg-background rounded-xl border border-border overflow-hidden divide-y divide-border">
+                  <a
+                    href="https://github.com/tuanbagia/finman"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 flex items-center justify-between hover:bg-muted/30 transition-colors cursor-pointer"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="bg-accent-green/20 p-2 rounded-lg">
+                        <Github className="size-5 text-accent-green" />
+                      </div>
+                      <div>
+                        <p className="font-['DM_Sans',sans-serif] font-medium text-[16px] text-foreground">Creator</p>
+                        <p className="font-['DM_Sans',sans-serif] font-normal text-[12px] text-muted-foreground">RD Triawan Subagia Soetama</p>
+                      </div>
+                    </div>
+                    <span className="text-[12px] font-['DM_Sans',sans-serif] font-semibold text-accent-green">GitHub</span>
+                  </a>
+
+                  <a
+                    href="https://www.figma.com/design/FUzAZyOI4QEi7hFwu5f48n/FinMan---Personal-Finance-Manager?node-id=1-4&t=CNRIJ4oGpyGvzmD3-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-4 flex items-center justify-between hover:bg-muted/30 transition-colors cursor-pointer"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="bg-accent-green/20 p-2 rounded-lg">
+                        <Palette className="size-5 text-accent-green" />
+                      </div>
+                      <div>
+                        <p className="font-['DM_Sans',sans-serif] font-medium text-[16px] text-foreground">UI/UX Design</p>
+                        <p className="font-['DM_Sans',sans-serif] font-normal text-[12px] text-muted-foreground">Designed by Rezky Azhar Aditya</p>
+                      </div>
+                    </div>
+                    <span className="text-[12px] font-['DM_Sans',sans-serif] font-semibold text-accent-green">Figma</span>
+                  </a>
                 </div>
               </div>
 
